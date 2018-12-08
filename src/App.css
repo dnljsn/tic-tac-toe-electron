@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -29,4 +29,44 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+h1{
+  text-align: center;
+  margin: 32px 0;
+  color: #555;
+  font-weight: 300;
+}
+.board {
+  display: flex;
+  width: 450px;
+  height: 450px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  border: 5px solid #ddd;
+  margin: 32px auto 64px auto;
+}
+
+.square {
+  height: 150px;
+  width: 150px;
+  box-sizing: border-box;
+  border: 5px solid #ddd;
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.square:hover {
+  cursor: pointer;
+  background-color: #4099ff;
+  color: #fff;
+}
+
+.winner{
+  text-align: center;
+  color: #0CC90C;
 }
